@@ -1,0 +1,9 @@
+DELIMITER &&
+CREATE PROCEDURE amt_sum()
+BEGIN
+SELECT CUST_NAME, GRADE 
+from customer where (RECEIVE_AMT + OPENING_AMT) > 10000;
+END && 
+DELIMITER ;
+
+CALL amt_sum();
