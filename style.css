@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(152, 239, 216);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    padding: 30px 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: #7326a3;
+}
+table{
+    border-style: dashed;
+    border-radius: 5px;
+    border-width: 3px;
+}
+th, td{
+    text-align: center;
+    padding: 5px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#flex-item-3{
+    justify-content: center;
+    align-items: center;
+}
+#flex-item-4{
+    justify-content: center;
+    align-items: center;
+}
+#loginUserName{
+    justify-content: left;
+    align-items: left;
+    box-shadow: 5px 5px 10px 5px #58a272;
+    border-radius: 20px;
+}
+#LoginPassword{
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px 5px #58a272;
+    border-width: 3px;
+    border-radius: 20px;
+}
+button{
+    box-shadow: 5px 5px 10px 5px #58a272;
+}
+#addButton{
+    color: green;
+}
+#deleteButton{
+    color: red;
+}
