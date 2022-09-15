@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Team Information Page</title>
+</head>
+
+<body>
+    
+    <h2>
+        <center>Team Form</center>
+    </h2>
+    <form id="data_form" onsubmit="show_alert(this);" required>
+        <br><br>
+        <label for="managername"><b>Manager Name</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="managername" required>
+        <br><br>
+        <label for="grpemail"><b>Group Email</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" id="grpemail" required>
+        <br><br>
+        <label for="serveruname"><b>Server Username</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="serveruname" required>
+        <br><br>
+        <label for="serverpswd"><b>Server Password</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" id="serverpswd" required>
+        <br><br>
+        <label for="confirmpswd"><b>Confirm Password</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input onfocusout="passwordcheck();" type="password" id="confirmpswd" required>
+        <br><br>
+        <label for="teamlead"><b>Team Lead</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select name="teamlead" id="teamlead">
+            <option value="">ABC</option>
+            <option value="">MNO</option>
+            <option value="">PQR</option>
+            <option value="">XYZ</option>
+        </select>
+        <br><br>
+        <label for="teammembers"><b>Team Members</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- Drop Target 1 -->
+        <div class="droptarget-div" ondragover="dragoverHandler(event)" ondrop="dropHandler(event)">
+            <p id="t1" ondragstart="dragstartHandler(event)" draggable="true">Tony</p>
+            <p id="t2" ondragstart="dragstartHandler(event)" draggable="true">Steve</p>
+            <p id="t3" ondragstart="dragstartHandler(event)" draggable="true">Bruce</p>
+            <p id="t4" ondragstart="dragstartHandler(event)" draggable="true">Thor</p>
+        </div>
+        <!-- Drop Target 2 -->
+        <div class="droptarget-div" ondragover="dragoverHandler(event)" ondrop="dropHandler(event)">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <br><br><br>
+        <button type="submit" onsubmit="show_alert();" background-color="green">Submit</button>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,18 @@
+.droptarget-div{
+    width: 100px;
+    border-width: 1px;
+    border-style: solid;
+}
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+  }
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  .button[type=submit]{
+    background-color: green;
+  }
